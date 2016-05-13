@@ -1,0 +1,128 @@
+
+Notes on installing Python for Computational Methods in Physics
+================================================================================
+
+Revised May 13, 2016
+Mike Moran
+Original: Mark Caprio
+
+You will first want to install Python 3.3, using the appropriate installer
+(Windows or Mac) provided on this page. This is what you will need for the first
+course session. At your convenience, you will want to install NumPy, SciPy, and
+matplotlib (you will find the installers for these on this page as well).
+
+If you'd like, you can also explore installing the latest version (3.5) on your
+own (check under ALL for an easy way to do this), but the older 3.3 versions of
+the required software are given to you and are known to work.
+
+You will also need to make sure that you have a plain text editor to write and
+edit your code. Examples include Sublime Text, Notepad++, Atom, vim, and many
+others. I (MM) use a combination of Sublime Text and vim for my editing.
+
+
+ALL
+--------------------------------------------------------------------------------
+
+There are some all-inclusive distributions of Python that include everything we
+need for the class (and then some) that you can use as a single point
+installation method. One of the more prominent ones is the Anaconda distribution
+available at http://continuum.io/downloads.
+
+Also on that page is the "miniconda" distribution that only contains Python and
+the Conda package manager, which you can then use to install the packages we
+need for this class.
+
+This is the recommended way to install python for all operating systems. If you
+follow this path, use the latest (3.5) version. You'll get a couple bonuses that
+won't be available to 3.3 users. This is also the method that I (MM) use for
+managing my python installation.
+
+
+WINDOWS
+--------------------------------------------------------------------------------
+
+First download and install Windows/python-3.3.3.msi. Once you have done the
+installation, look in your Start Menu under All Program, and you should find a
+folder "Python 3.3". Within that folder, you should see a program named "IDLE
+(Python GUI)". Make sure you can start this program.
+
+Note for Windows users: If you install everything using the files you have been
+provided, everything should be fine. However, if you have previously installed
+other versions of Python, you may run into trouble. In particular, it is
+important that you install (and use) the 32-bit version of Python, not the
+64-bit version. Numpy is only compatible with the 32-bit version of Python. The
+64-bit version of Python won't even recognize that you have installed NumPy.
+
+One cool new thing is "Bash for Windows" which gives you the same bash
+functionality as linux machines without having to do any additional
+installation. Python is tested to work in this environment, and your work will
+more closely follow what I do in class. Please explore this as an option,
+especially since most modern scientific computing is done in a linux-type
+environment.
+
+
+MAC
+--------------------------------------------------------------------------------
+
+First download and install Mac/python-3.3.3-macosx10.6.dmg. The installer should
+walk you through the steps necessary for the installation, and the defaults
+should work fine. Once you have done this, you should have a program named IDLE
+installed on your Mac. Make sure you can start this program.
+
+Likely problems for Mac users: If your version of OS X is too new, you will have
+to override its security settings to force your Mac to install the software.
+Specifically, if you are using a Mac with Mountain Lion (OS X 10.8) or later
+systems, then you will probably see a message saying that Python cannot be
+installed because the developer is unidentified. This happens because Python is
+not yet compatible with Gatekeeper. This can be easily overridden, however.
+Simply right click on the installer icon (the one that looks like a cardboard
+box), and select "open with...installer" from the menu. This is also explained
+in the ReadMe found in the dmg file.
+
+On the other hand, if your version of OS X is too old, you may have to do some
+more serious work, involving installing a "package manager" and upgrading some
+software.
+
+
+LINUX
+--------------------------------------------------------------------------------
+
+There are multiple ways to install the required packages in Linux environments
+aside from using a scientific distribution. First, you'll need to install Python
+3 itself:
+
+    apt install python3 python3-dev
+
+After, you need to install the scientific packages that we will use. You can
+either use the Linux package manager:
+
+    apt install python3-numpy python3-scipy python3-matplotlib
+
+or the python package manager, pip:
+
+    python3 -m pip install numpy scipy matplotlib --user
+
+You can also try to install from source and perform a local install of the
+required libraries. Since Python should already be installed on your machine,
+you do not need to actually install the interpreter (note that in most cases you
+will not be given an IDE to start). Make sure that you install the Python 3
+compatible version.
+
+For your packages, you can get the sources from GitHub, either from the command
+line (git clone) or downloading and unpacking the zip file from the project
+site. I've included the zip files here for convenience.
+
+Installing from source is very easy. Within your package directory, run
+
+  python3 setup.py install --user
+
+to create a local install of the package, for your particular Python 3
+installation, that you can use. Once done, check that everything is OK with
+
+  python3 -c "import numpy; import scipy; import matplotlib"
+
+from your home directory. If everything is working, you will have no output.
+
+If you are having trouble, ask myself or Mark Caprio, since we both have
+experience installing on Linux machines.
+
