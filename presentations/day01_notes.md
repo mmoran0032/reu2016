@@ -39,6 +39,8 @@ Getting help
 
 - Python documentation is very helpful: https://docs.python.org/3/
 
+- Using the interpreter itself! `help(print)`
+
 
 Basic math operations
 --------------------------------------------------------------------------------

@@ -69,3 +69,6 @@ Container types
 - You can call functions within the statements: `if len(l) > 4:`
 
 - Check if item in something: `if 'x' in test_string:`
+
+- When you're comparing items, you can use `in` to see if something is in a
+  container, `isinstance` to see if a variable is something, and many others
