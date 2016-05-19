@@ -70,6 +70,20 @@ print('My full name is', full_name)
 
 !
 
+## Tired of typing?
+
+We can create a program that we can just run, instead of typing everything in
+over and over again.
+
+```python
+#!/usr/bin/env python3
+
+# code goes here
+print(5**2)
+```
+
+!
+
 ## Your own functions
 
 ```
