@@ -19,8 +19,6 @@ Lesson 02: Functions and Container Types
 
 bisection.py: refresher from yesterday, editing code, math, etc.
 
-variables: local vs. global, naming conventions
-
 containers: lists, tuples, strings; definition and usage
 
 if/elif/else: conditions, <= etc
