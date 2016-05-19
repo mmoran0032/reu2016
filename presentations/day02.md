@@ -16,6 +16,8 @@ Run it with
 $ python3 bisection.py
 ```
 
+Make sure you are in the correct directory!
+
 !
 
 ## Data Structures
@@ -24,13 +26,13 @@ lists: `l = [1, 2, 3]
 
 tuples: `t = (1, 2, 3)
 
-sets: `s = set(1, 2, 3)
+sets: `s = set([1, 2, 3])
 
 dictionary: `d = {'a': 1, 'b': 2, 'c': 3}
 
 !
 
-## Programming Structures
+## Controlling program flow
 
 ```
 if condition is True:
@@ -40,14 +42,3 @@ elif condition is False:
 else:
     print('you will never get here')
 ```
-
-## PS part 2
-
-```
-while condition is True:
-    print('do this forever!')
-
-for item in collection:
-    print(item)
-```
-

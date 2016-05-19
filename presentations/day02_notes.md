@@ -35,3 +35,37 @@ Container types
   or subtract items from the list, or adjust items within the list
 
 - Tuples are lists, but can't be changed after you create them
+
+- Talk more about lists, creation, editing, access
+  - new list: `l = []` (empty)
+  - add to the list: `l.append(value)`
+  - find length of list: `len(l)`
+  - get second value from list: `l[1]`
+  - get slice of the list: `l[2:5]; l[:4]; l[-3:]`
+
+- Update `bisection.py` to use lists where it makes sense
+
+- Update `bisection.py` to make better use of functions
+
+
+`if/elif/else`
+--------------------------------------------------------------------------------
+
+- Used to control flow by checking a condition or conditions
+  ```python
+  x = 5
+  if x > 10:
+      print('x is large')
+  elif x > 2:
+      print('x is medium')
+  elif x >= 0:
+      print('x is small')
+  else:  # x < 0
+      print('x is negative')
+  ```
+
+- You can nest if statements, and the blocks can be any number of lines long.
+
+- You can call functions within the statements: `if len(l) > 4:`
+
+- Check if item in something: `if 'x' in test_string:`
