@@ -34,6 +34,19 @@ Mike Moran
 
 !
 
+# Roadmap
+
+1. Introduction to Python
+1. Introduction (continued)
+1. Loops and File I/O
+1. Special Topics in Standard Python
+1. Introduction to NumPy/Matplotlib
+1. Numerical Methods
+1. Numerical Methods in SciPy
+1. Final Project
+
+!
+
 # Let's code!
 
 !
