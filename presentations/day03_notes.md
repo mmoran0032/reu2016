@@ -88,3 +88,11 @@ Saving data from files
   ```
   - We can post-process this after forming the list, or using the `csv` module
     we already have some processing done
+
+
+Example files
+--------------------------------------------------------------------------------
+
+- `nothwind.txt` separate by word to get used to file I/O
+
+- `156dy_jul00_singles.txt` separate out into bin and counts as individual lists

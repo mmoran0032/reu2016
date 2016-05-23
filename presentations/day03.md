@@ -70,7 +70,8 @@ with open(filename, 'r') as f:
 import csv
 
 with open(filename, 'r') as f:
-    reader = csv.reader(f, delimiter=',')  # default
+    # using default delimiter
+    reader = csv.reader(f, delimiter=',')
     next(reader)
 ```
 
