@@ -29,6 +29,9 @@ Strings revisited
 Lists and file processing revisited
 --------------------------------------------------------------------------------
 
+- We'll do this a bunch of times and save the numbers, so we have a basic set of
+  data to help guide some analysis later on...
+
 - Creating and appending to a list is *slow!*
   - Let's time how long it takes:
     ```python
