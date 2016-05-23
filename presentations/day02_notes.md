@@ -85,3 +85,16 @@ Strings
 
 - They also have special processing to make things easier:
   - `s.strip()` removes leading and trailing whitespace
+
+
+Introduction to looping
+--------------------------------------------------------------------------------
+
+- Just as a quick idea, let's build something to count the letters in a string
+  ```python
+  test_string = 'your string here'
+  letter_counts = [0, 0, 0, 0, 0]  # just count vowels
+  for letter in test_string:
+      # letter starts with 'y', then 'o', then 'u', etc.
+      # check if it's a vowel, and do stuff
+  ```
