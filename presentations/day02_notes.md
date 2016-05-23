@@ -72,3 +72,16 @@ Container types
 
 - When you're comparing items, you can use `in` to see if something is in a
   container, `isinstance` to see if a variable is something, and many others
+
+
+Strings
+--------------------------------------------------------------------------------
+
+- Strings are everywhere in python, and we can convert them between different
+  types easily:
+  - `int(s), float(s)` to get numbers
+  - `s.split()` to break the string up by whitespace (default) or whatever you
+    pass into `split` and save them in a list
+
+- They also have special processing to make things easier:
+  - `s.strip()` removes leading and trailing whitespace

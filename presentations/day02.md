@@ -42,3 +42,13 @@ elif condition is False:
 else:
     print('you will never get here')
 ```
+
+!
+
+## Introduction to Strings
+
+Strings are everywhere!
+
+You've already worked with some before...
+
+`strip, split, float`
