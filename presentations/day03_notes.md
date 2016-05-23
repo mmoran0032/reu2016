@@ -82,13 +82,6 @@ Saving data from files
       data.append(line)
   ```
 
-- Python has a better way, called *list comprehension*:
-  ```python
-  data = [line for line in f]
-  ```
-  - We can post-process this after forming the list, or using the `csv` module
-    we already have some processing done
-
 
 Example files
 --------------------------------------------------------------------------------
