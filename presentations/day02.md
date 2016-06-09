@@ -7,6 +7,10 @@ Mike Moran
 
 !
 
+## From last time...
+
+!
+
 ## `bisection.py`
 
 Available on the website
@@ -20,15 +24,14 @@ Make sure you are in the correct directory!
 
 !
 
-## Data Structures
+## Booleans
 
-lists: `l = [1, 2, 3]
+`True` or `False` within python
 
-tuples: `t = (1, 2, 3)
+- `True` can also mean non-zero or non-empty or has-length (don't worry too
+  much about this now)
 
-sets: `s = set([1, 2, 3])
-
-dictionary: `d = {'a': 1, 'b': 2, 'c': 3}
+- can use `and`, `or`, `not`, and group comparisons logically
 
 !
 
@@ -42,6 +45,18 @@ elif condition is False:
 else:
     print('you will never get here')
 ```
+
+!
+
+## Data Structures
+
+lists: `l = [1, 2, 3]
+
+tuples: `t = (1, 2, 3)
+
+sets: `s = set([1, 2, 3])
+
+dictionary: `d = {'a': 1, 'b': 2, 'c': 3}
 
 !
 

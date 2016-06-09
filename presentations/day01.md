@@ -20,20 +20,6 @@ Mike Moran
 
 !
 
-## Examples of Programming
-
-- performing data analysis
-
-- saving an equation in your graphing calculator
-
-- modding a video game
-
-- setting up a reminder on your phone
-
-- "actual" programming
-
-!
-
 # Roadmap
 
 1. Introduction to Python
