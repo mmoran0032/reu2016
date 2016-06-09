@@ -50,13 +50,13 @@ else:
 
 ## Data Structures
 
-lists: `l = [1, 2, 3]
+lists: `l = [1, 2, 3]`
 
-tuples: `t = (1, 2, 3)
+tuples: `t = (1, 2, 3)`
 
-sets: `s = set([1, 2, 3])
+sets: `s = set([1, 2, 3])`
 
-dictionary: `d = {'a': 1, 'b': 2, 'c': 3}
+dictionary: `d = {'a': 1, 'b': 2, 'c': 3}`
 
 !
 
