@@ -1,6 +1,15 @@
 02: Functions and Containers
 ================================================================================
 
+Windows users
+--------------------------------------------------------------------------------
+
+- Look into the guide [here](https://www.davidbaumgold.com/tutorials/set-up-python-windows/)
+  for using python on Windows with Cygwin. It is an alternative to using IDLE,
+  and you will be learning bash at the same time. Your work would more closely
+  follow what I do in class.
+
+
 Refresher from last time
 --------------------------------------------------------------------------------
 
@@ -45,11 +54,6 @@ Refresher from last time
 - You can nest if statements, and the blocks can be any number of lines long.
 
 - You can call functions within the statements: `if len(l) > 4:`
-
-- Check if item in something: `if 'x' in test_string:`
-
-- When you're comparing items, you can use `in` to see if something is in a
-  container, `isinstance` to see if a variable is something, and many others
 
 
 Container types

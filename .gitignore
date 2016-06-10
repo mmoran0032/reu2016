@@ -3,3 +3,5 @@ reu.sublime-workspace
 *.sty
 *.cls
 presentations/*.pdf
+responses
+syllabus/syllabus.tex
