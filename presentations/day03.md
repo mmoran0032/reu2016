@@ -6,18 +6,7 @@ Mike Moran
 
 !
 
-## `for`
-
-Basic structure:
-
-```
-for item in container:
-    do_something_with(item)
-```
-
-- container is an *iterable* (list, sequence, string, *generator*)
-
-- if you just want numbers, use `range`
+## From last time...
 
 !
 
@@ -34,6 +23,21 @@ while condition is True:
 - condition can be anything that returns a *boolean* (usually math-related)
 
 - without update, infinite loop
+
+!
+
+## `for`
+
+Basic structure:
+
+```
+for item in container:
+    do_something_with(item)
+```
+
+- container is an *iterable* (list, tuple, string, sequence, or *generator*)
+
+- if you just want numbers, use `range`
 
 !
 

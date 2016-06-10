@@ -12,6 +12,12 @@ Refresher from last time
 `for/while` Loops
 --------------------------------------------------------------------------------
 
+- While loops work similarly to if statements, but will continue performing
+  actions until some condition is met
+  - You need to make sure that you update whatever variable is needed for the
+    condition within the loop, otherwise the loop will never finish
+  - We've seen a `while` loop used already: `bisection.py`
+
 - Think of for being for each, so for each item in a container
   ```python
   for item in user_list:
@@ -22,11 +28,6 @@ Refresher from last time
 
 - A nice additional thing, if you want the index *and* the item, is to use
   `enumerate`: `for i, value in enumerate(user_list)`
-
-- While loops work similarly to if statements, but will continue performing
-  actions until some condition is met
-  - You need to make sure that you update whatever variable is needed for the
-    condition within the loop, otherwise the loop will never finish
 
 
 Example: Srinivasa Ramanujan
@@ -46,6 +47,7 @@ File processing
   access data
   - Python is great with this, since it works very well with strings and files
     without much "boilerplate" code
+  - By default, information will be returned as a string
 
 - Use basic UNIX path conventions to access files (`.` is current directory,
   `..` is the directory above, `/` to separate directories)
@@ -56,7 +58,7 @@ File processing
   f.read()  # f.readline() for just one line
   f.close()
   ```
-  - `read/readline` return an empty string if they have reached the end of the
+  - `read/readline` returns an empty string if they have reached the end of the
     file, so you can use this as a "sentinel" value
   - An empty line still contains a newline (`\n`) character
 
@@ -81,6 +83,18 @@ Saving data from files
       # process line if necessary
       data.append(line)
   ```
+
+
+Necessary string work
+--------------------------------------------------------------------------------
+
+- Usually you'll end up doing the same thing to each line, so very easy to put
+  inside of the `for` loop for processing
+
+- Essentials are: `s.strip()` (removes leading and trailing whitespace,
+  including newlines), `s.split()` (breaks the string up into a list on any
+  whitespace by default or only what you pass in), and converting values into
+  numbers (`int(s)` or `float(s)`, usually)
 
 
 Example files
