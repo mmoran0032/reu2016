@@ -77,28 +77,3 @@ Container types
 
 - Update `bisection.py` to make better use of functions
 
-
-Strings
---------------------------------------------------------------------------------
-
-- Strings are everywhere in python, and we can convert them between different
-  types easily:
-  - `int(s), float(s)` to get numbers
-  - `s.split()` to break the string up by whitespace (default) or whatever you
-    pass into `split` and save them in a list
-
-- They also have special processing to make things easier:
-  - `s.strip()` removes leading and trailing whitespace
-
-
-Introduction to looping (if time)
---------------------------------------------------------------------------------
-
-- Just as a quick idea, let's build something to count the letters in a string
-  ```python
-  test_string = 'your string here'
-  letter_counts = [0, 0, 0, 0, 0]  # just count vowels
-  for letter in test_string:
-      # letter starts with 'y', then 'o', then 'u', etc.
-      # check if it's a vowel, and do stuff
-  ```

@@ -58,12 +58,3 @@ sets: `s = set([1, 2, 3])`
 
 dictionary: `d = {'a': 1, 'b': 2, 'c': 3}`
 
-!
-
-## Introduction to Strings
-
-Strings are everywhere!
-
-You've already worked with some before...
-
-`strip, split, float`
