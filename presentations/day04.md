@@ -6,50 +6,48 @@ Mike Moran
 
 !
 
-## What's left?
+## Special collections
 
-More with strings
+Aside from lists, tuples, sets, and dictionaries, there are a few special-case
+collections we can use
 
-Using builtin structures for mathematics
+```
+import collections
 
-Avoiding the program exiting early
+counter = collections.Counter()
+colors = ['red', 'blue', 'red',
+          'green', 'blue', 'blue']
+for word in colors:
+    counter[word] += 1
+
+Isotope = collections.namedtuple(
+    'Isotope', ['symbol', 'A', 'Z'])
+he4 = Isotope('He4', 4, 2)
+```
 
 !
 
-## Strings as 'lists'
+## Testing
 
-`s[a:b]` works the same as `l[a:b]`
+`assert condition is True`
+
+- stops program execution if condition is false
+
+- useful for making sure we read in the right amount of data, for instance
+
+!
+
+## Lists expanded
 
 Create a string from a list: `''.join(l)`
 
 - everything in `l` must be a string
 
-!
+Quickly create a list from a sequence:
 
-## Even better file processing!
+- `l = [i**2 for i in range(10)]`
 
-```
-data = [line for line in f]
-```
-
-Avoids creating/appending to a list, and is *much* faster!
-
-So, knowing this, let's change our work from last time...
-
-!
-
-## How do we know?
-
-Timing (profiling) is essential for complex algorithms
-
-```
-import datetime
-
-start = datetime.datetime.now()
-# code to time
-stop = datetime.datetime.now()
-total_time = stop - start
-```
+- Great for file processing!
 
 !
 
@@ -62,6 +60,8 @@ total_time = stop - start
 - If a nested list contains *only* numbers, we can treat it as a matrix:
   
   `m = [[0, 1], [1, 1]]`
+
+- This is inefficient, but we don't know a better way yet...
 
 !
 

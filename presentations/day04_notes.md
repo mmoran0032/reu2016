@@ -11,6 +11,33 @@ Refresher from last time
   structure to use later
 
 
+Special collections
+--------------------------------------------------------------------------------
+
+- Python has more than just lists, tuples, sets, and dictionaries, available
+  through the `collections` module
+
+- `collections.Counter` provides an easy way to count up items within a list
+  - Edit your code from Tuesday to count up the occurrences words in
+    `northwind.txt`, and print out the 10 most common (`c.most_common(num)`)
+
+- `collections.namedtuple` provides an easy way to create records
+
+
+Testing
+--------------------------------------------------------------------------------
+
+- I've shown you this before, but here it is again, since it is important to
+  know how to test your code:
+  ```python
+  assert condition is True
+  # following only runs if condition is met
+  ```
+
+- We won't spend a lot of time on this, but know that a lot of times you'll want
+  to test you code
+
+
 Strings revisited
 --------------------------------------------------------------------------------
 
@@ -25,6 +52,17 @@ Strings revisited
   uncertainty in the counts for the data
   - requires creating a string to write to the file
 
+- We can also combine a list of strings into a single string, joined by whatever
+  input string you use:
+  ```python
+  s = '\n'.join(l)  # puts newlines between items in the list
+  s = ' in between '.join(l)
+  ```
+  - This is a nice way to create a string to write to a file
+
+- String formatting: `'values: {}, {}'.format(value1, value2)`
+
+  - You can include a whole lot more information in here
 
 Lists and file processing revisited
 --------------------------------------------------------------------------------
@@ -35,15 +73,15 @@ Lists and file processing revisited
 - Creating and appending to a list is *slow!*
   - Let's time how long it takes:
     ```python
-    import datetime
+    from datetime import datetime as dt
 
-    start = datetime.datetime.now()
+    start = dt.now()
     l = []
     for i in range(100000):
         l.append(i)
-    end = datetime.datetime.now()
+    end = dt.now()
 
-    print(start - end)
+    print((start - end).total_seconds())
     ```
 
     - How can we turn this into a function?
@@ -84,7 +122,7 @@ Lists as mathematical objects
   ```python
   try:
       import numpy
-      print(numpy.__version__)
+      print('numpy: ', numpy.__version__)
   except ImportError:
       print('numpy not installed')
   ```
