@@ -84,6 +84,9 @@ Saving data from files
       data.append(line)
   ```
 
+- Now, let's do stuff with the data! Count up how many times each word appears
+  in `northwind.txt`, and find the average number of sunspots in `sunspots.txt`
+
 
 Necessary string work
 --------------------------------------------------------------------------------
@@ -102,4 +105,4 @@ Example files
 
 - `nothwind.txt` separate by word to get used to file I/O
 
-- `156dy_jul00_singles.txt` separate out into bin and counts as individual lists
+- `sunspots.txt` separate out into bin and counts as individual lists
