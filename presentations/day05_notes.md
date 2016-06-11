@@ -29,6 +29,9 @@ Creating arrays and basic math
 Plotting
 --------------------------------------------------------------------------------
 
+- The `matplotlib.pyplot` [documentation](http://matplotlib.org/api/pyplot_api.html)
+  is essential reading! I have it bookmarked!
+
 - At the most basic level, `plt.plot(x, y)` will create a connected line graph
 
 - You can pass additional options to plot to change the graph type
@@ -39,6 +42,21 @@ Plotting
 - Everything can be controlled, so look at the documentation
 
 - To display, you need to run `plt.show()`, and program execution waits
+
+- As an example, let's plot sin(x)/x over some range, just to see how numpy
+  handles divide-by-zero:
+  ```python
+  import numpy
+  import matplotlib.pyplot as plt
+
+  x = numpy.linspace(-10, 10, 9999)  # to ensure zero is in the array
+  y = numpy.sin(x)/x
+  plt.plot(x, y)
+  plt.show()
+  ```
+  - `nan` (not-a-number) values don't affect us at all! We're essentially free
+    from worry about them (but you should be careful anyway)
+  - We know that `0` is in the array too: `x[4999] == 0` or `assert 0 in x`
 
 
 Read in data
@@ -60,3 +78,17 @@ Sunspot data
 - Moving average is given by:
   - `Y_k = \frac{1}{2r}\sum_{m=-r}^r y_{k+m}`
   - `r = 5` is pretty good, and `y_k` are the individual sunspot numbers
+
+
+*Note:* Saving plots
+--------------------------------------------------------------------------------
+
+- Instead of saving individual plots, you want to save the full *figure*. This
+  process is a little more involved, but comes into play when you want a figure
+  with multiple subplots. For the basics, we can use:
+  ```python
+  fig, ax = plt.subplots(1, 1)
+  ax.plot(x, y)
+  # plt.show()
+  fig.savefig('filename.png')
+  ```
