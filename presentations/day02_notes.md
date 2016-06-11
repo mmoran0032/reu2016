@@ -69,9 +69,14 @@ Container types
 
 - Tuples are lists, but can't be changed after you create them
 
+- Lists are zero-indexed, so the first item is accessed with `0`, the second
+  item with `1`, etc. You can also count backwards, with `-1` being the last
+  item, `-2` being the second-to-last, etc.
+
 - Talk more about lists, creation, editing, access
   - new list: `l = []` (empty)
   - add to the list: `l.append(value)`
+  - remove an item: `del l[2]`
   - combine lists: `l1 + l2 + l3; l1.extend(l2); l1 += l2`
   - find length of list: `len(l)`
   - get second value from list: `l[1]`
@@ -81,3 +86,15 @@ Container types
 
 - Update `bisection.py` to make better use of functions
 
+
+Better output
+--------------------------------------------------------------------------------
+
+- For large lists, just trying to print them usually looks bad, so we can use
+  the `pprint` module:
+  ```python
+  from pprint import pprint
+
+  # create large list here...
+  pprint(l)
+  ```
