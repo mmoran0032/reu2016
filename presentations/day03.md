@@ -51,6 +51,10 @@ Srinivasa Ramanujan discovered an infinite series for π:
 
 !
 
+## String detour
+
+!
+
 ## Basic file reading
 
 ```
@@ -76,8 +80,8 @@ with open(filename, 'r') as f:
 import csv
 
 with open(filename, 'r') as f:
-    # using default delimiter
-    reader = csv.reader(f, delimiter=',')
+    reader = csv.reader(
+        f, delimiter=',')
     next(reader)
 ```
 

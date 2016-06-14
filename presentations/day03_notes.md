@@ -40,6 +40,18 @@ Example: Srinivasa Ramanujan
 - What else do we need to program in order to figure this out?
 
 
+Necessary string work
+--------------------------------------------------------------------------------
+
+- Usually you'll end up doing the same thing to each line, so very easy to put
+  inside of the `for` loop for processing
+
+- Essentials are: `s.strip()` (removes leading and trailing whitespace,
+  including newlines), `s.split()` (breaks the string up into a list on any
+  whitespace by default or only what you pass in), and converting values into
+  numbers (`int(s)` or `float(s)`, usually)
+
+
 File processing
 --------------------------------------------------------------------------------
 
@@ -62,13 +74,15 @@ File processing
     file, so you can use this as a "sentinel" value
   - An empty line still contains a newline (`\n`) character
 
-- Basic structure (writing):
+- A safer way to open/close files is using a `with` statement:
   ```python
-  f = open(filename, 'w')
-  f.write('string to write\n')
-  f.close()
+  with open(filename, 'r') as f:
+      f.read()
   ```
-
+  - `with` automatically closes the file once we're done, so we don't need to
+    worry about adversely affecting the file
+  - We don't have to remember to close the file
+  - It is much shorter to write and looks clearer!
 
 Saving data from files
 --------------------------------------------------------------------------------
@@ -86,18 +100,6 @@ Saving data from files
 
 - Now, let's do stuff with the data! Count up how many times each word appears
   in `northwind.txt`, and find the average number of sunspots in `sunspots.txt`
-
-
-Necessary string work
---------------------------------------------------------------------------------
-
-- Usually you'll end up doing the same thing to each line, so very easy to put
-  inside of the `for` loop for processing
-
-- Essentials are: `s.strip()` (removes leading and trailing whitespace,
-  including newlines), `s.split()` (breaks the string up into a list on any
-  whitespace by default or only what you pass in), and converting values into
-  numbers (`int(s)` or `float(s)`, usually)
 
 
 Example files
