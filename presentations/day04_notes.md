@@ -10,6 +10,9 @@ Refresher from last time
 - We can read data from a file, write to a file, and save the data in a
   structure to use later
 
+- We won't be able to cover all of this in class, but I'm keeping all of the
+  notes in here so that you have some additional guidance for your own study
+
 
 Special collections
 --------------------------------------------------------------------------------
@@ -23,6 +26,19 @@ Special collections
 
 - `collections.namedtuple` provides an easy way to create records
 
+- Example code:
+  ```python
+  import collections
+
+  counter = collections.Counter()
+  colors = ['red', 'blue', 'red', 'green', 'blue', 'blue']
+  for word in colors:
+      counter[word] += 1
+
+  Isotope = collections.namedtuple('Isotope', ['symbol', 'A', 'Z'])
+  he4 = Isotope('He4', 4, 2)
+  ```
+
 
 Testing
 --------------------------------------------------------------------------------
@@ -33,6 +49,9 @@ Testing
   assert condition is True
   # following only runs if condition is met
   ```
+  The `condition is True` can be anything, but usually is number comparison
+
+- You can call functions within the statement, such as `assert len(l) == 5`
 
 - We won't spend a lot of time on this, but know that a lot of times you'll want
   to test you code
@@ -91,6 +110,13 @@ Lists and file processing revisited
   l = [i for i in range(100000)]
   ```
   - Try timing it with your function and compare
+
+  - This is extremely useful for a lot of different situations, like file
+    processing:
+    ```python
+    with open(filename, 'r') as f:
+        data = [line.split() for line in f]
+    ```
 
 - Let's take that data file, and load it in using our list comprehension, then
   create two lists containing the individual data series

@@ -8,6 +8,55 @@ Mike Moran
 
 !
 
+## Lists for math
+
+- If a list contains *only* numbers, we can treat it as a vector:
+
+  `v = [0., 0., -9.81]`
+
+- If a nested list contains *only* numbers, we can treat it as a matrix:
+
+  `m = [[0, 1], [1, 1]]`
+
+- This is inefficient, but we don't know a better way yet...
+
+!
+
+## Lists expanded
+
+Create a string from a list: `''.join(l)`
+
+- everything in `l` must be a string
+
+Quickly create a list from a sequence:
+
+- `l = [i**2 for i in range(10)]`
+
+- Great for file processing!
+
+!
+
+## Special for-looping functions
+
+We already know about `range`
+
+`enumerate` gets the value and index
+
+`zip` "walks" through two lists at the same time
+
+!
+
+## Better printing
+
+Using `pprint` isn't always what we want, so let's control string formatting
+
+```
+s1 = 'num: {}'.format(value)
+s2 = 'num: {.4f}'.format(value)
+```
+
+!
+
 ## Special collections
 
 Aside from lists, tuples, sets, and dictionaries, there are a few special-case
@@ -36,44 +85,6 @@ he4 = Isotope('He4', 4, 2)
 - stops program execution if condition is false
 
 - useful for making sure we read in the right amount of data, for instance
-
-!
-
-## Lists expanded
-
-Create a string from a list: `''.join(l)`
-
-- everything in `l` must be a string
-
-Quickly create a list from a sequence:
-
-- `l = [i**2 for i in range(10)]`
-
-- Great for file processing!
-
-!
-
-## Lists for math
-
-- If a list contains *only* numbers, we can treat it as a vector:
-  
-  `v = [0., 0., -9.81]`
-
-- If a nested list contains *only* numbers, we can treat it as a matrix:
-  
-  `m = [[0, 1], [1, 1]]`
-
-- This is inefficient, but we don't know a better way yet...
-
-!
-
-## Special for-looping functions
-
-We already know about `range`
-
-`enumerate` gets the value and index
-
-`zip` "walks" through two lists at the same time
 
 !
 
