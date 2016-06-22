@@ -12,6 +12,7 @@ Refresher from last time
 - We'll do a long refresher over this, including the full solution for the
   moving average, at the start of class
 
+
 Overview
 --------------------------------------------------------------------------------
 
@@ -28,8 +29,11 @@ Integration
 - If they ask, give the example about reaction rate calculations that almost
   have to be done numerically
 
-- We'll just implement the Simpson's method, specifically the Simpson's 3/8ths
-  rule:
+- Easiest way to integrate is the trapezoid method, so let's write this as a
+  basis for our integration. We know we can do better, but for now, this is
+  a good start
+
+- We'll implement Simpson's method, specifically the Simpson's 3/8ths rule:
   ```python
   h = (b - a) / 3
   factor = f(a) + 3*f((2*a + b) / 3) + 3*f((a + 2*b) / 3) + f(b)
