@@ -9,6 +9,8 @@ Refresher from last time
 
 - We can plot results using `matplotlib` and control the look of those plots
 
+- We'll do a long refresher over this, including the full solution for the
+  moving average, at the start of class
 
 Overview
 --------------------------------------------------------------------------------
