@@ -40,11 +40,24 @@ Explore these on your own too, since we won't be able to cover everything...
 
 !
 
-## Integration
+# Integration
 
 !
 
-We'll just focus on implementing Simpson's 3/8 rule:
+## Trapezoid method
+
+1. Divide your interval into some number of sub-intervals
+
+1. Each sub interval is a trapezoid, connecting the two points on the graph
+
+```
+trap = dx * (f(x + dx) + f(x))
+```
+
+!
+
+## Simpson's 3/8 rule
+
 ```
 h = (b - a) / 3
 factor = (f(a) +
@@ -56,15 +69,11 @@ integral = (3 * h / 8) * factor
 
 !
 
-## Root Finding
+# Root Finding
 
 !
 
-## But why?
-
-Bisection method is slow and inefficient, and we can do better
-
-Alternatives:
+## Alternatives to bisection
 
 - Newton's method (if we know the functional form of the derivative)
 
