@@ -50,7 +50,6 @@ Integration
   This only works if `n` is a multiple of 3
 
 
-
 Root Finding
 --------------------------------------------------------------------------------
 
