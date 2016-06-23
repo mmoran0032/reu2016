@@ -23,7 +23,8 @@ Creating arrays and basic math
 
 - Basic math operations are also included, but act on each element separately
 
-- If you need random points, you should use `numpy.random.rand(r, c)`
+- If you need random points, you should use `numpy.random.rand(r, c)` or
+  `numpy.random.rand(n)` (if you just want a one-dimensional array)
 
 
 Plotting
@@ -79,9 +80,13 @@ Sunspot data
   - `Y_k = \frac{1}{2r}\sum_{m=-r}^r y_{k+m}`
   - `r = 5` is pretty good, and `y_k` are the individual sunspot numbers
 
+- There's a few different ways you can do this easily with arrays...
+
 
 *Note:* Saving plots
 --------------------------------------------------------------------------------
+
+- There's an easy way: hit the Save button after showing your plot!
 
 - Instead of saving individual plots, you want to save the full *figure*. This
   process is a little more involved, but comes into play when you want a figure
