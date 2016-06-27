@@ -46,6 +46,8 @@ Curve fitting:
 
 - still in `scipy.optimize`...
 
-Linear Algebra:
+Linear Algebra (won't talk about today):
 
 - `scipy.linalg` (use arrays for matrices)
+
+And more!

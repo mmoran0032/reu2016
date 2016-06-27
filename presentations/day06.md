@@ -8,7 +8,7 @@ Mike Moran
 
 !
 
-## Main Topics
+## "Main" Topics
 
 1. Integration
 
@@ -18,13 +18,11 @@ Mike Moran
 
 1. Differential Equations
 
-1. Others...?
-
 Explore these on your own too, since we won't be able to cover everything...
 
 !
 
-## Main Topics
+## "Main" Topics
 
 1. **Integration**
 
@@ -33,8 +31,6 @@ Explore these on your own too, since we won't be able to cover everything...
 1. **Root Finding** (we've done this before)
 
 1. Differential Equations
-
-1. Others...?
 
 Explore these on your own too, since we won't be able to cover everything...
 
@@ -51,7 +47,7 @@ Explore these on your own too, since we won't be able to cover everything...
 1. Each sub interval is a trapezoid, connecting the two points on the graph
 
 ```
-trap = dx * (f(x + dx) + f(x))
+trap = dx * (f(x + dx) + f(x)) / 2
 ```
 
 !
@@ -84,6 +80,6 @@ x1 = x0 - f(x0)/f'(x0)
 - Secant method (if we don't)
 
 ```
-x2 = x1 - f(x1) * 
+x2 = x1 - f(x1) *
      (x1 - x0)/(f(x1) - f(x0))
 ```

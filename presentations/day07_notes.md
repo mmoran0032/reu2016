@@ -77,3 +77,10 @@ Curve Fitting
   plt.plot(x, lin(x, *pars))
   plt.show()
   ```
+
+- The defined function to fit must have `x` as its first parameter, but aside
+  from that, anything goes! You probably don't want it to be too complex...
+
+- There will be some test data to fit, but you can always generate it yourself!
+  `numpy.random` has ways to sample random numbers from a given distribution,
+  which you can then fit after the fact.
