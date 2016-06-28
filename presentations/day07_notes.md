@@ -62,6 +62,7 @@ Curve Fitting
 
 - Example code:
   ```python
+  import matplotlib.pyplot as plt
   import numpy
   from scipy.optimize import curve_fit
 
